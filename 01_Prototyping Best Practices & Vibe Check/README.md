@@ -36,16 +36,95 @@ You will be required to submit a link to your GitHub, as well as screenshots of 
 
 Please evaluate your system on the following questions:
 
+**Note: In all the responses the markdown formatting is an issue. Hence, I am not going to mention it in all the answers but just here.**
+
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
     - Aspect Tested:
+      - The important thing to evaluate is that if the response can be understood by the beginner.
+      - The sentence "_**Think of objects...**_" guides the reader to understand what is OOP in a simple way.
+      - The output seems to be a bit terse for an explanation to a beginner.
+      - There is no follow-up question in the response if the user wishes to ask further questions. This can be an app enhancement, but it will be better for the AI based on the nature of the question to ask in this case because the intention of the user is to understand OOP. 
+      - Missing simple code examples.
+      <details>
+      <summary>Click to see the actual response</summary>
+      
+          Sure! Object-oriented programming (often called OOP) is a way to write computer programs by organizing code into "objects." 
+            
+          Think of objects like things in the real world. For example, imagine a "Car." A Car has:
+		
+          - **Properties** (also called attributes) that describe it, like color, brand, and speed.
+          - **Actions** (also called methods) that it can do, like start, stop, and accelerate.
+		
+          In OOP, you create a blueprint called a **class** (like a template for making many cars). Each actual car you create from the blueprint is an **object** or **instance** of that class.
+		
+          This way of organizing code makes it easier to understand, reuse, and maintain because you group related data and actions together, just like how things work in real life.
+		
+          So, in short:  
+          - Objects = things with properties and actions.  
+          - Classes = blueprints for making objects.  
+		
+          This helps programmers build complex programs in a simple, organized way!
+      </details>
+
 2. Read the following paragraph and provide a concise summary of the key points…
     - Aspect Tested:
+      - Testing the summarization here. 
+      - I pasted a rather full-length article. The response had 10 sections with 3-4 bullet points, which was decent.
+      - The output still felt was not concise. And the formatting was terrible.
+        <details>
+        <summary>Click to see the actual response</summary>
+      
+            The actual response is too big to paste
+        </details>
+
+
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
     - Aspect Tested:
+    - This tests the creativity of the AI.
+    - The generated response is actually quite a good story. The aspects like giving the robot a name. And the story of a human and a robot building friendship is a good response for this prompt.
+    - The word count was 143. It was within the word count mentioned in the prompt.
+       <details>
+       <summary>Click to see the actual response</summary>
+   
+          In a quiet, forgotten library lived R-42, a robot built for information but yearning for connection. Each day, R-42 meticulously organized dusty books, its circuits humming with routine. One rainy afternoon, a small, scruffy cat slipped inside, seeking shelter. Startled, R-42 froze, unsure how to react. The cat, unfazed, brushed against R-42's metallic leg and purred.
+   
+          Over time, the duo formed a peculiar friendship. R-42 learned to interpret the cat's gentle meows as stories of the outside world, while the cat found comfort in the robot's steady presence. Together, they explored shelves of ancient tales, R-42 reading aloud in a soft, mechanical voice. The robot's loneliness melted away, replaced by warmth sparked from an unexpected friendship.
+   
+          In that silent library, between pages and purrs, R-42 discovered that even circuits could crave companionship—and sometimes, it comes in the form of a tiny, whiskered friend.
+       </details>
+   
+
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
     - Aspect Tested:
+    - This is a math problem presented in natural language. 
+    - Verified the accuracy of the calculation and also the steps on how the AI performed the calculation.
+       <details>
+       <summary>Click to see the actual response</summary>
+   
+          To get exactly 12 apples and 9 oranges:
+
+          - Apples come in packs of 4.
+          - Oranges come in packs of 3.
+
+          For apples:
+          12 apples ÷ 4 apples per pack = 3 packs
+
+          For oranges:
+          9 oranges ÷ 3 oranges per pack = 3 packs
+
+          So, you need to buy **3 packs of apples** and **3 packs of oranges**.
+       </details>
+
+
 5. Rewrite the following paragraph in a professional, formal tone…
     - Aspect Tested:
+    - Testing how effectively the AI translates to formal tone. — "Hey, can you help me figure out what to cook for dinner tonight using whatever's left in my fridge?"
+    - The generated response was formal. Should probably test with more informal sentences.
+       <details>
+       <summary>Click to see the actual response</summary>
+   
+          Could you please assist me in determining an appropriate dinner recipe using the remaining ingredients available in my refrigerator?
+       </details>
 
 This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
 
@@ -59,6 +138,10 @@ This "vibe check" now serves as a baseline, of sorts, to help understand what ho
 
 What are some limitations of vibe checking as an evaluation tool?
 ##### ✅ Answer:
+- No Standard Benchmarks—Not easy to quantify. As a consequence, even if improvements are made, they cannot be accurately measured.
+- Bias—Depending on who is testing/using the application, the results can be interpreted differently.
+- The vibe check output results in categorizing responses as "good vibes" or "bad vibes". But it does not clearly say what is working or not.
+- Does not cover all use-cases. Lack of depth. Only checking the surface.
 
 ### 🚧 Advanced Build (OPTIONAL):
 
@@ -68,14 +151,16 @@ Please make adjustments to your application that you believe will improve the vi
 
 #### 🏗️ Activity #1
 ##### Adjustments Made:
-- _describe adjustment(s) here_
+
+1. Used different prompt templates based on the user query.
+2. Added React-Markdown for rendering markdown responses correctly.
 
 ##### Results:
-1. _Comment here how the change(s) impacted the vibe check of your system_
-2. 
-3. 
-4. 
-5.
+1. Much more professional result, comparable to ChatGPT
+2. Good follow-up question, ask for summarization of key points
+3. Much better output, like a page from a novel
+4. Not much difference here.
+5. Not much difference here either.
 
 
 ## Submitting Your Homework
